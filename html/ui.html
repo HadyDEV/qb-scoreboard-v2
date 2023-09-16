@@ -1,0 +1,222 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal:700&display=swap&subset=arabic" rel="stylesheet">
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.0.0/css/pro.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+    <title>ScoreBoard</title>
+</head>
+<body>
+    <div class="container-first">
+        <div class="scoreboard-block-first">
+            <div class="scoreboard-header-first">
+                <div class="info-beam-title-first3-first">
+                    <p>OwnerSide</p>
+                </div>
+            </div>
+
+            <div class="scoreboard-info-first">
+                <div class="scoreboard-info-first-header">
+                </div>
+                <div class="scoreboard-info-first-beam" data-type="ambulance" style="background: #00c3ff00;">
+                </div>
+                <div class="scoreboard-info-first-beam" data-type="police" style="background: #121212;">
+                    <div class="info-beam-title-first2">
+                        <p>Missions</p>
+                    </div>
+                </div>
+                <div class="scoreboard-info-first-beam" data-type="varheist" style="background: #1F1F1F;">
+                    <div class="info-beam-title-first"><i class="fa-solid fa-tornado"></i> <span> Money Storm</p>
+                    </div>
+                    <div class="info-beam-status-first"></div>
+                </div>
+                <div class="scoreboard-info-first-beam" data-type="casinorob" style="background: #1F1F1F;">
+                    <div class="info-beam-title-first4"><i class="fa-solid fa-plane-up"></i> <span> Mission of the
+                            Cartel</p>
+                    </div>
+                    <div class="info-beam-status-first"></div>
+                </div>
+                <div class="scoreboard-info-first-beam" data-type="police" style="background: #121212;">
+                    <div class="info-beam-title-first2">
+                        <p>Robberies</p>
+                    </div>
+                </div>
+                <div class="scoreboard-info-first-beam" data-type="casinorob" style="background: #1F1F1F;">
+                    <div class="info-beam-title-first"><i class="fa-regular fa-coins"></i> <span> Union Robbery</p>
+                    </div>
+                    <div class="info-beam-status-first"></div>
+                </div>
+                <div class="scoreboard-info-first-beam" data-type="houserob" style="background: #1F1F1F;">
+                    <div class="info-beam-title-first"><i class="fa-solid fa-house"></i> <span> House Robbery</p>
+                    </div>
+                    <div class="info-beam-status-first"></div>
+                </div>
+                <div class="scoreboard-info-first-beam" data-type="houserob" style="background: #1F1F1F;">
+                    <div class="info-beam-title-first4"><i class="fa-solid fa-building"></i> <span> Luxury House Robbery
+                            </p>
+                    </div>
+                    <div class="info-beam-status-first"></div>
+                </div>
+                <div class="scoreboard-info-first-beam" data-type="storerob" style="background: #1F1F1F;">
+                    <div class="info-beam-title-first"><i class="fa-solid fa-store"></i> <span> Grocery Stores</p>
+                    </div>
+                    <div class="info-beam-status-first"></div>
+                </div>
+                <div class="scoreboard-info-first-beam" data-type="jewellery" style="background: #1F1F1F;">
+                    <div class="info-beam-title-first4"><i class="fa-solid fa-gem"></i> <span> Jewellery Robbery</p>
+                    </div>
+                    <div class="info-beam-status-first"></div>
+                </div>
+                <div class="scoreboard-info-first-beam" data-type="fleecarob" style="background: #1F1F1F;">
+                    <div class="info-beam-title-first"><i class="fa-duotone fa-building-columns"></i> <span> Fleeca
+                            Robbery</p>
+                    </div>
+                    <div class="info-beam-status-first"></div>
+                </div>
+                <div class="scoreboard-info-first-beam" data-type="police" style="background: #121212;">
+                    <div class="info-beam-title-first2">
+                        <p>Information</p>
+                    </div>
+                </div>
+                <div class="scoreboard-info-first-beam" data-type="policeonline" style="background: #1F1F1F;">
+                    <div class="info-beam-title-first"><i class="fa-solid fa-user-police"></i> <span> Police Presence
+                            </p>
+                    </div>
+                    <div class="info-beam-status-first"></div>
+                </div>
+                <div class="scoreboard-info-first-beam" data-type="ambulance" style="background: #1F1F1F;">
+                    <div class="info-beam-title-first"><i class="fa-solid fa-user-nurse"></i> <span> Medic Presence</p>
+                    </div>
+                    <div class="info-beam-status-first"></div>
+                </div>
+                <div class="scoreboard-info-first-beam" style="background: #1F1F1F;">
+                    <div class="info-beam-title-first"><i class="fa-solid fa-users"></i> <span> Online Players</p>
+                    </div>
+                    <div class="info-beam-status-first2" id="total-players-first"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scoreboard-block-sec">
+            <div class="scoreboard-header">
+                <img src="logo.png" alt="sb-logo" class="sb-logo">
+            </div>
+
+            <div class="scoreboard-info-sec">
+                <div class="boarder"></div>
+                <div class="scoreboard-info-sec-header madness-header">
+                    <div id="info-tab-label-sec" class="server-name">
+                        <p>Madness</p>
+                    </div>
+                </div>
+                <div class="scoreboard-info-sec-beam" style="background: #121212;">
+                    <div class="info-beam-title-sec">
+                        <p>Information</p>
+                    </div>
+                </div>
+                <div class="scoreboard-info-sec-beam" data-type="policeonline" style="background: #1f1f1f;">
+                    <div class="info-beam-status-sec"></div>
+                    <div class="info-beam-title-sec">
+                        <p><i class="fa-thin fa-user-police"></i> Police Presence</p>
+                    </div>
+
+                </div>
+                <div class="scoreboard-info-sec-beam" style="background:  #1f1f1f;;">
+                    <div class="info-beam-status-sec" id="total-players-sec"></div>
+                    <div class="info-beam-title-sec">
+                        <p class="total-players-sec"><i class="fa-light fa-people-group"></i> Online Players</p>
+                    </div>
+
+                </div>
+                <div class="scoreboard-info-sec-beam" style="background: #121212;">
+                    <div class="info-beam-title-sec">
+                        <p>Robberies</p>
+                    </div>
+                </div>
+                <div class="scoreboard-info-sec-beam" data-type="storerob" style="background: #1f1f1f;">
+
+                    <div class="info-beam-status-sec"></div>
+                    <div class="info-beam-title-sec">
+                        <p><i class="fa-thin fa-store"></i> Store Robbery</p>
+                    </div>
+                </div>
+                <div class="scoreboard-info-sec-beam" data-type="houserob" style="background: #1f1f1f;">
+                    <div class="info-beam-status-sec"></div>
+                    <div class="info-beam-title-sec">
+                        <p><i class="fa-thin fa-house"></i> House Robbery</p>
+                    </div>
+                </div>
+                <div class="scoreboard-info-sec-beam" data-type="jewellery" style="background: #1f1f1f;">
+                    <div class="info-beam-status-sec"></div>
+                    <div class="info-beam-title-sec">
+                        <p><i class="fa-thin fa-gem"></i> Jewelry Robbery</p>
+                    </div>
+                </div>
+                <div class="scoreboard-info-sec-beam" data-type="bobcatrob" style="background: #1f1f1f;">
+                    <div class="info-beam-status-sec"></div>
+                    <div class="info-beam-title-sec">
+                        <p><i class="fa-light fa-person-rifle"></i> Bobcat Robbery</p>
+                    </div>
+
+                </div>
+                <div class="scoreboard-info-sec-beam" data-type="truckrob" style="background: #1f1f1f;">
+                    <div class="info-beam-status-sec"></div>
+                    <div class="info-beam-title-sec">
+                        <p><i class="fa-thin fa-truck"></i> Truck Robbery</p>
+                    </div>
+
+                </div>
+                <div class="scoreboard-info-sec-beam" data-type="fleecarob" style="background: #1f1f1f;">
+                    <div class="info-beam-status-sec"></div>
+                    <div class="info-beam-title-sec">
+                        <p><i class="fa-light fa-money-check-dollar-pen"></i> Fleeca Robbery</p>
+                    </div>
+
+                </div>
+                <div class="scoreboard-info-sec-beam" data-type="paletorob" style="background: #1f1f1f;">
+                    <div class="info-beam-status-sec"></div>
+                    <div class="info-beam-title-sec">
+                        <p><i class="fa-light fa-money-bill-trend-up"></i> Paleto Robbery</p>
+                    </div>
+
+                </div>
+                <div class="scoreboard-info-sec-beam" data-type="pacificrob" style="background: #1f1f1f;">
+                    <div class="info-beam-status-sec"></div>
+                    <div class="info-beam-title-sec">
+                        <p><i class="fa-thin fa-building-columns"></i> Pacific Robbery</p>
+                    </div>
+
+                </div>
+                <div class="scoreboard-info-sec-beam" style="background: #121212;">
+                    <div class="info-beam-title-sec">
+                        <p>Kidnapping</p>
+                    </div>
+                </div>
+                <div class="scoreboard-info-sec-beam" data-type="citizenrob" style="background: #1f1f1f;">
+                    <div class="info-beam-status-sec"></div>
+                    <div class="info-beam-title-sec">
+                        <p><i class="fa-thin fa-child"></i> Kidnapping a citizen</p>
+                    </div>
+
+                </div>
+                <div class="scoreboard-info-sec-beam" data-type="policerob" style="background: #1f1f1f;">
+                    <div class="info-beam-status-sec"></div>
+                    <div class="info-beam-title-sec">
+                        <p><i class="fa-regular fa-siren-on"></i> Kidnapping a police</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

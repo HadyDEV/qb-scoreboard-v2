@@ -1,0 +1,766 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+.container-first {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.scoreboard-block-first {
+    display: none;
+    position: absolute;
+    height: 75vh;
+    width: 29vh;
+    border-radius: 10px;
+    right: -3vh;
+    top: 27vh;
+    box-shadow: 0px 0px 5px 2px rgba(110, 110, 110, 0);
+    animation: mymove 0.75s;
+    animation-delay: 0s;
+}
+
+.scoreboard-header-first {
+    position: absolute;
+    top: -1vh;
+    right: 4vh;
+    width: 81.1%;
+    height: 3.5vh;
+    background: linear-gradient(to right, #FF9409, #FF9409);
+}
+
+.scoreboard-header-first > p {
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    padding: 1.8vh;
+    font-family: 'Tajawal';
+    font-size: 1.8vh;
+}
+
+.scoreboard-info-first {
+    position: relative;
+    height: 29vh;
+    width: 26vh;
+    top: 24%;
+    transform: translateY(-70%);
+    margin: 0 auto;
+}
+
+.scoreboard-info-first-header {
+    position: relative;
+    height: 2vh;
+}
+
+ #info-tab-label {
+    position: absolute;
+    font-family: 'Tajawal';
+    color: rgb(255, 255, 255);
+    left: 1vh;
+    font-weight: bold;
+} 
+
+ #status-tab-label {
+    position: absolute;
+    font-family: 'Tajawal';
+    color: rgb(255, 255, 255);
+    right: 3vh;
+    font-weight: bold;
+} 
+
+.info-beam-title-first {
+    position: absolute;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1.4vh;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.1vh;
+    left: 3vh;
+    line-height: 3vh;
+}
+
+.info-beam-title-first2 {
+    position: absolute;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1.4vh;
+    font-weight: bold;
+    color: #B7B7B7;
+    letter-spacing: 0.1vh;
+    left: 1vh;
+    line-height: 3vh;
+}
+
+.info-beam-title-first3-first {
+    position: absolute;
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.9vh;
+    font-weight: bold;
+    color: black;
+    right: 10vh;
+    top: -0.3vh;
+    line-height: 4vh;  
+}
+
+.info-beam-title-first4 {
+    position: absolute;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1.4vh;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.1vh;
+    left: 2.7vh;
+    line-height: 3vh;
+}
+
+.info-beam-status-first {
+    position: absolute;
+    font-family: 'Tajawal';
+    font-size: 1vh;
+    color: rgb(255, 255, 255);
+    left: 1vh;
+    float: left;
+    text-align: left;
+    line-height: 3.5vh;
+}
+
+.info-beam-status-first2 {
+    position: absolute;
+    font-family: 'Tajawal';
+    font-size: 1.5vh;
+    color: rgb(255, 255, 255);
+    left: 1vh;
+    float: left;
+    text-align: left;
+    line-height: 3.5vh;
+}
+
+.scoreboard-info-first-beam {
+    position: relative;
+    border-radius: 0.5px;
+    box-shadow: 0px 0px 3px rgba(0, 153, 255, 0);
+    height: 3vh;
+    margin: 2px 1px 1px 1px;
+    width: 90%;
+}
+
+.scoreboard-info-first-beam2 {
+    position: relative;
+    border-radius: 0.5px;
+    box-shadow: 0px 0px 3px rgba(0, 153, 255, 0);
+    height: 2.75vh;
+    margin: 3px 1px 1px 1px;
+    width: 85%;
+}
+
+.slide-out{
+    animation: slideout 0.5s forwards;
+    -webkit-animation: slideout 0.5s forwards;
+
+  }
+
+.fa-check {
+    color: rgb(44, 248, 176);
+}
+
+.fa-clock {
+    color: rgb(255, 190, 50);
+}
+
+.green {
+    color: rgb(44, 248, 176);
+}
+
+.red {
+    color: rgb(235, 59, 59);
+}
+
+.qb-LOGO {
+    width: 6vh;
+    height: 6vh;
+    margin: -11px 3px 0px -9px;
+    border-radius: 50px;    
+	right: -10vh;
+}
+
+@keyframes mymove {
+    from {right: -150px;}
+    to {right: -1;}
+}
+@keyframes slideout {
+    from {right: -1;}
+    to {right: -150px;}
+  }
+
+  
+--devloper by tma .container-sec {
+    height: 100vh;
+    font-family: 'Tajawal', sans-serif !important;
+}
+
+.scoreboard-block-sec {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 43vh;
+    border-radius: 8px;
+    right: -2vh;
+    top: 0;
+}
+
+.scoreboard-header>p {
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    padding: 1.8vh;
+    font-family: 'Tajawal';
+    font-size: 1.8vh;
+}
+
+.scoreboard-info-sec {
+    position: absolute;
+    height: 100%;
+    width: 20vh;
+    top: 75%;
+    left: 48%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    /* border-right: solid 5px #121212; */
+}
+
+.scoreboard-info-sec1 {
+    position: absolute;
+    height: 32.5vh;
+    width: 20vh;
+    top: 55%;
+    left: 2%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+}
+
+.scoreboard-info-sec-header {
+    position: relative;
+    height: 2vh;
+}
+
+
+.madness-header {
+    background-color: #121212;
+    margin: 2px 0;
+    /* z-index: 5; */
+    border: solid 3px #ff9411;
+    border-radius: 30vh 0 0 30vh;
+    padding: 5px;
+}
+
+.scoreboard-info-sec-header.madness-header:after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background: #121212;
+    right: -5px;
+    top: 0;
+}
+.madness-header2 {
+    background-color: #141414;
+}
+
+#info-tab-label-sec {
+    position: absolute;
+    font-family: 'Tajawal';
+    color: #ff9411;
+    left: 1vh;
+    top: 0;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 3vh;
+}
+
+#status-tab-label {
+    position: absolute;
+    font-family: 'Tajawal';
+    color: rgb(255, 255, 255);
+    right: 3vh;
+    font-weight: bold;
+}
+
+.info-beam-title-sec {
+    /* position: absolute; */
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1.2vh;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.1vh;
+    /* right: 2vh; */
+    line-height: 2vh;
+}
+
+.total-players-sec {
+    position: relative;
+    /* right: -6vh; */
+}
+.info-beam-status-sec {
+        /* position: absolute; */
+        font-family: 'Tajawal';
+        font-size: 1.0vh;
+        color: rgb(255, 255, 255);
+        width: fit-content;
+        /* left: 1vh; */
+        /* line-height: 2.25vh; */
+        margin: 8px;
+}
+
+.info-beam-status-sec1 {
+    position: absolute;
+    font-family: 'Tajawal';
+    font-size: 1.6vh;
+    color: rgb(255, 255, 255);
+    right: 2vh;
+    float: left;
+    text-align: left;
+    line-height: 2.25vh;
+}
+
+.scoreboard-info-sec-beam {
+    position: relative;
+    height: 2vh;
+    width: fit-content;
+    display: flex;
+    justify-content: end;
+    float: right;
+    align-items: center;
+    border-radius: 30vh 0px 0px 30vh;
+    margin: 15px 1px 1px;
+    padding: 3px 7px;
+    z-index: -1;
+    /* font-size: 4vh; */
+}
+
+.scoreboard-info-sec-beam1 {
+    position: relative;
+    border-radius: 8px;
+    /* box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.205); */
+    height: 3.75vh;
+    margin: 5px 1px 1px 1px;
+    width: 100%;
+}
+
+.fa-check {
+    color: rgb(59, 141, 49);
+}
+
+.fa-clock {
+    color: rgb(255, 190, 50);
+}
+
+.green {
+    color: rgb(98, 255, 78);
+}
+
+.red {
+    color: rgb(235, 59, 59);
+}
+
+.sb-logo {
+    position: absolute;
+    /* margin-left: 90%; */
+    /* margin-top: 17%; */
+    height: 2.5vh;
+    width: 2.5vh;
+    z-index: 1;
+    top: 25.7vh;
+    right: 18vh;
+}
+
+
+/* -------- " Z Menu " player statistics -------- */
+
+.g8dresma-block {
+    display: none;
+    position: absolute;
+    height: 6.6vh;
+    width: 63.8vh;
+    right: 32.02%;
+    bottom: 3.4%;
+    background-color: rgba(26, 26, 26, 0.688);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.stat-info {
+    position: absolute;
+    height: 32vh;
+    width: 26vh;
+    bottom: -650.2%;
+    transform: translateY(-50%);
+    left: 20.8%;
+}
+
+.stat-info1 {
+    position: absolute;
+    height: 32vh;
+    width: 26vh;
+    bottom: -617%;
+    transform: translateY(-50%);
+    left: 7.84%;
+}
+
+.stat-info2 {
+    position: absolute;
+    height: 32vh;
+    width: 14vh;
+    bottom: -650.2%;
+    transform: translateY(-50%);
+    left: 48.88%;
+    margin: 0 auto;
+}
+
+.stat-info3 {
+    position: absolute;
+    height: 32vh;
+    width: 26vh;
+    bottom: -650.8%;
+    transform: translateY(-50%);
+    left: 90.4%;
+    margin: 0 auto;
+}
+
+.stat-info4 {
+    position: absolute;
+    height: 32vh;
+    width: 26vh;
+    bottom: -650.8%;
+    transform: translateY(-50%);
+    left: 86.4%;
+    margin: 0 auto;
+}
+
+.stat-info5 {
+    position: absolute;
+    height: 32vh;
+    width: 26vh;
+    bottom: -650.8%;
+    transform: translateY(-50%);
+    left: 82.4%;
+    margin: 0 auto;
+}
+
+.stat-info6 {
+    position: absolute;
+    height: 32vh;
+    width: 26vh;
+    bottom: -650.8%;
+    transform: translateY(-50%);
+    left: 78.4%;
+    margin: 0 auto;
+}
+
+.stat-info7 {
+    position: absolute;
+    height: 32vh;
+    width: 26vh;
+    bottom: -650.8%;
+    transform: translateY(-50%);
+    left: 74.48%;
+    margin: 0 auto;
+}
+
+.stat-info8 {
+    position: absolute;
+    height: 32vh;
+    width: 26vh;
+    bottom: -617%;
+    transform: translateY(-50%);
+    left: 36%;
+}
+
+.stat-info9 {
+    position: absolute;
+    height: 32vh;
+    width: 26vh;
+    bottom: -617%;
+    transform: translateY(-50%);
+    left: 64.08%;
+}
+
+.scoreboard-stat-beam {
+    height: 7vh;
+    width: 14.4vh;
+    border-radius: 15px;
+}
+
+.scoreboard-stat-beam2 {
+    height: 7vh;
+    width: 14.4vh;
+    border-radius: 15px;
+}
+
+.scoreboard-stat-beam3 {
+    height: 6vh;
+    width: 6vh;
+    border-radius: 15px;
+}
+
+.scoreboard-stat-beam4 {
+    height: 6vh;
+    width: 6vh;
+    border-radius: 15px;
+}
+
+.scoreboard-stat-beam5 {
+    height: 6vh;
+    width: 6vh;
+    border-radius: 15px;
+}
+
+.scoreboard-stat-beam6 {
+    height: 6vh;
+    width: 6vh;
+    border-radius: 15px;
+}
+
+.scoreboard-stat-beam7 {
+    height: 6vh;
+    width: 6vh;
+    border-radius: 15px;
+}
+
+.info-stat-title {
+    position: relative;
+    font-family: "Tajawal", sans-serif;
+    font-size: 1vh;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    margin-top: -2%;
+}
+
+.info-stat-title2 {
+    position: relative;
+    font-family: "Tajawal", sans-serif;
+    font-size: 1vh;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    margin-top: -2%;
+}
+
+.info-stat-title3 {
+    position: relative;
+    font-family: "Tajawal", sans-serif;
+    font-size: 1vh;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: -4.4%;
+}
+
+.info-stat-titlepj {
+    position: relative;
+    font-family: "Tajawal", sans-serif;
+    font-size: 1.5vh;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: -4.4%;
+}
+
+.info-stat-title4 {
+    position: relative;
+    font-family: "Tajawal", sans-serif;
+    font-size: 1vh;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: -4.4%;
+}
+
+.info-stat-title5 {
+    position: relative;
+    font-family: "Tajawal", sans-serif;
+    font-size: 1vh;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: -4.4%;
+}
+
+.info-stat-title6 {
+    position: relative;
+    font-family: "Tajawal", sans-serif;
+    font-size: 1vh;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: -4.4%;
+}
+
+.info-stat-title7 {
+    position: relative;
+    font-family: "Tajawal", sans-serif;
+    font-size: 1vh;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: -4.4%;
+}
+
+.info-pointstat-title {
+    position: relative;
+    font-family: "Tajawal", sans-serif;
+    font-size: 1vh;
+    color: rgb(206, 206, 206);
+    text-align: right;
+    margin-bottom: -6.88%;
+}
+
+.info-pointstat-title2 {
+    position: relative;
+    font-family: "Tajawal", sans-serif;
+    font-size: 1vh;
+    color: rgb(206, 206, 206);
+    text-align: left;
+    margin-bottom: 4.48%;
+}
+
+.info-pointstat-title3 {
+    position: relative;
+    font-family: "Tajawal", sans-serif;
+    font-size: 0.88vh;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-style: italic;
+    top: 34%;
+    left: -19%;
+}
+
+.stat-beam-status {
+    position: relative;
+    font-family: "Tajawal", sans-serif;
+    text-align: left;
+    font-size: 1vh;
+    top: -0.6vh;
+    margin-top: -2%;
+    color: rgb(244, 246, 207);
+}
+
+.stat-beam-status1 {
+    position: relative;
+    font-family: "Tajawal", sans-serif;
+    font-size: 1vh;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    top: 58%;
+    left: -18%;
+}
+
+.stat-beam-status2 {
+    position: relative;
+    font-family: "Tajawal", sans-serif;
+    text-align: left;
+    font-size: 1vh;
+    top: -0.76vh;
+    margin-top: -1.4%;
+    color: rgb(244, 246, 207);
+}
+
+.stat-beam-status3 {
+    position: relative;
+    font-family: "Tajawal", sans-serif;
+    text-align: center;
+    font-size: 1vh;
+    top: -1vh;
+    font-weight: bold;
+    margin-top: 22%;
+    color: rgb(244, 246, 207);
+}
+
+.stat-beam-status4 {
+    position: relative;
+    font-family: "Tajawal", sans-serif;
+    text-align: center;
+    font-size: 1vh;
+    top: -1vh;
+    font-weight: bold;
+    margin-top: 22%;
+    color: rgb(244, 246, 207);
+}
+
+.stat-beam-status5 {
+    position: relative;
+    font-family: "Tajawal", sans-serif;
+    text-align: center;
+    font-size: 1vh;
+    top: -1vh;
+    font-weight: bold;
+    margin-top: 22%;
+    color: rgb(244, 246, 207);
+}
+
+.stat-beam-status6 {
+    position: relative;
+    font-family: "Tajawal", sans-serif;
+    text-align: center;
+    font-size: 1vh;
+    top: -1vh;
+    font-weight: bold;
+    margin-top: 22%;
+    color: rgb(244, 246, 207);
+}
+
+.stat-beam-status7 {
+    position: relative;
+    font-family: "Tajawal", sans-serif;
+    text-align: center;
+    font-size: 1vh;
+    top: -1vh;
+    font-weight: bold;
+    margin-top: 22%;
+    color: rgb(244, 246, 207);
+}
+
+.qb-eth {
+    position: absolute;
+    margin-left: -6%;
+    margin-top: 2%;
+    height: 6.4vh;
+    width: 6.4vh;
+}
+
+.qb-line {
+    position: absolute;
+    height: auto;
+    width: 8vh;
+    transition: translate(-50%, -50%);
+}
+
+.qb-line1 {
+    position: absolute;
+    height: auto;
+    width: 8vh;
+    transition: translate(-50%, -50%);
+}
+
+.qb-line2 {
+    position: absolute;
+    margin-left: -54%;
+    height: auto;
+    width: 8vh;
+    transition: translate(-50%, -50%);
+}
+
+/* .fa-circle {
+    font-size: 1vh;
+    position: relative;
+    top: -2px;
+} */
+
+/* .server-name {
+    left: 3vh;
+    position: relative;
+} */
+
+.boarder {
+    height: 100%;
+    border-left: solid 3px #ff9411;
+    width: 6px;
+    position: absolute;
+    top: -25vh;
+    right: -7px;
+    z-index: 0;
+    background-color: #121212;
+}
